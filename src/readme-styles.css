@@ -1,0 +1,20 @@
+/* Fonts */
+@font-face {
+  font-family: 'Pixel Operator';
+  src: url('./assets/fonts/PixelOperator.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pixel Operator';
+  src: url('./assets/fonts/PixelOperator-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Headers */
+h1,h2,h3 {
+  font-size: clamp(2.4rem, 3.6vw, 3.6rem);
+  font-family: 'Pixel Operator';
+}
+
