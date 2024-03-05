@@ -1,0 +1,78 @@
+<!-- Home CSS -->
+<style>
+    /* Home Page, with a left and right container */
+    .home {
+        display: flex;
+        flex-direction: row;
+        aspect-ratio: 1.76 / 1;
+    }
+    /* Both Containers */
+    .home-left-container, .home-right-container {
+        height: 100%;
+    }
+    /* Left Container w/ "Video Game Design Club" & Join Discord Button*/
+    .home-left-container {
+        background-color: #1B1A39;
+        height: 100%;
+        width: 50%;
+        min-width: 270px;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Container for "Video Game Design Club" */
+    .home-header-container {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        align-self: flex-start;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    /* Title: "Video Game Design Club" */
+    h1 {
+        font-size: clamp(3rem, 4vw, 5rem);
+        letter-spacing: 0.2rem;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    /* Join Discord Button */
+    .join-discord-button {
+        display: flex;
+        align-items: center; /* Center the text */
+        justify-content: center; /* Center the text */
+        background-color: #000AEE;
+        height: 50px;
+        width: 40%;
+        border-radius: 4rem;
+        border: none;
+        margin: 20px;
+        cursor: pointer;
+        font-size: clamp(1.5rem, 1.5vw, 2rem);
+    }
+    /* Right Container w/ Image of Video Game Design Club Game (Cookie Climber) */
+    .home-right-container {
+        height: 100%;
+        width: 100%;
+    }
+    .home-right-container img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+</style>
+
+<!-- Home HTML -->
+<section class="home">
+    <div class = "home-left-container">
+        <div class="home-header-container">
+            <h1>Video Game <br> Design Club</h1>
+        </div>
+        <button class = "join-discord-button">JOIN DISCORD</button>
+    </div>
+    <div class = "home-right-container">
+        <img src = "assets/images/cookie-climber-gameplay.png" alt="Cookie Climber">
+    </div>
+</section>

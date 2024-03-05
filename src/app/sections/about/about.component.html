@@ -1,0 +1,60 @@
+<!-- About CSS -->
+<style>
+    .about {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center; 
+        aspect-ratio: 2.03 / 1;
+        background-color: #3A5AFF;
+        padding: clamp(15px, 5vw, 30px);
+    }
+
+    .about-image-container {
+        flex-basis: 35%; 
+        height: 100%;
+    }
+
+    .about-image {
+        width: 100%;
+        border-radius: 2.5rem;
+    }
+
+    .about-content {
+        flex-basis: 65%; 
+        padding: 20px; 
+        height: 100%;
+    }
+
+    .about-title {
+        
+    }
+
+    .about-description, .about-meeting-info {
+    }
+    
+    /* Phones */
+    @media (max-width: 600px) {
+        .about {
+            flex-direction: column;
+        }
+        .about-image-container {
+            flex-basis: 100%;
+        }
+        .about-content {
+            flex-basis: 100%;
+        }
+    }
+</style>
+
+<!-- About HTML -->
+<section class = "about">
+    <div class="about-image-container">
+        <img src="assets/images/filler-about-image.png" alt="Group of students" class="about-image">
+    </div>
+    <div class="about-content">
+        <h1 class="about-title">ABOUT US</h1>
+        <p class="about-description">The Video Game Design Club is a club at Sac State filled with passionate students learning to design and create video games. From complete beginners to the more experienced, members of the club get to learn and partake in the process of video game design. Artists, Musicians, Programmers, writers, and more combine their talents to contribute to current projects.</p>
+        <p class="about-meeting-info">All meetings are optional. Online & In Person at [Building Name] &#64; [Time].</p>
+    </div>
+</section>

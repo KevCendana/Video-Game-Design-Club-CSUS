@@ -1,0 +1,73 @@
+<!-- Officers CSS -->
+<style>
+    /* Officers Section */
+    .officers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 2.03 / 1;
+        background-color: #0C33FF;
+        padding: clamp(15px, 5vw, 30px);
+        border-bottom: 10px solid #001FC4;
+    }
+    /* Container for List of Officers */
+    .officers-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 1000px;
+        gap: 2rem;
+        list-style: none;
+        padding: 0;
+    }
+    /* Officer Profile - Container for image & text */
+    .officer-profile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+    /* Officer Wrapper for Image and Name */
+    .officer-image-wrapper {
+        position: relative;
+        aspect-ratio: 1 / 1;
+        width: clamp(280px, 13vw, 500px);
+        margin: clamp(5px, 4vw, 30px);
+        padding: 0px;
+        border: clamp(4px, 1vw, 8px) solid black;
+    }
+    /* Officer Profile Picture */
+    .officer-image {
+        aspect-ratio: 1/1;
+        width: 100%;
+    }
+    /* Officer Name */
+    .officer-name {
+        font-family: 'Pixel Operator', sans-serif;
+        font-weight: normal;
+        position: absolute;
+        bottom: -4px;
+        left: -2px;
+        padding: 0.2rem 0.5rem 0.2rem 0.2rem;
+        background-color: black;
+        font-size: clamp(1.8rem, 2vw, 2.3rem);
+    }
+</style>
+
+<!-- Officers HTML -->
+<section class = "officers">
+    <h1 class="officers-title">OFFICERS</h1>
+    <ul class="officers-list">
+        <li class="officer-profile">
+            <div class="officer-image-wrapper">
+                <img src="assets/images/Pixel-Profile-Template.png" alt="Officer" class="officer-image">
+                <h2 class="officer-name">Dylan</h2>
+            </div>
+            <p class="officer-description">The President is the leader of the club and is responsible for overseeing the club's activities and meetings. The President is also responsible for representing the club to the public and the university.</p>
+        </li>
+    </ul>
+</section>

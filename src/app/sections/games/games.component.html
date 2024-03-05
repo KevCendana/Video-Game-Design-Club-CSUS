@@ -1,0 +1,39 @@
+<!-- Games CSS -->
+<style>
+    .games {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 400px;
+        background-color: #0022D6;
+        padding: clamp(15px, 5vw, 30px);
+    }
+    .games-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .game-image {
+        aspect-ratio: 1/1;
+        width: 30%;
+        object-fit: cover;
+        border: 5px solid #150098;
+        border-radius: 10px;
+    }
+</style>
+
+<!-- Games HTML -->
+<section class = "games">
+    <h1>GAMES</h1>
+    <div class="games-container">
+        <img src="assets/images/cookie-climber-titlecard.png" alt="Game" class="game-image">
+        <div class = "game-text">
+            <h2 class = "game-title">Cookie Climber</h2>
+            <p class="game-description">Made in the style of a game jam, this game is a quick little 'endless' scroller. You play as a kid who wants to climb to the top and get get to the cookie jar. Armed with a kick and a punch you can push and rotate blocks respectively.  </p>
+            <p>W or Space to jump, A and S to move left and right, Left arrow key for block kick, and Right arrow key for a block punch. Try your best to climb to the top!</p>
+        </div>
+    </div>
+</section>
